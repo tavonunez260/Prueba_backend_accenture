@@ -1,0 +1,98 @@
+////////////////////////////////////
+//CREACION DE PEDIDOS
+
+//Menor a 70000
+{
+  "fechaCreacion": "2020-10-10T08:00:00",
+  "idCliente": "1082828",
+  "idFactura": "1",
+  "listaIDProductos": [
+    111, 112
+  ]
+}
+
+//Entre 70000 y 100000
+{
+  "fechaCreacion": "2020-10-10T08:30:00",
+  "idCliente": "778778",
+  "idFactura": "2",
+  "listaIDProductos": [
+    114, 115, 116, 117
+  ]
+}
+
+//Mayor a 100000
+{
+  "fechaCreacion": "2020-10-10T08:45:00",
+  "idCliente": "685859",
+  "idFactura": "3",
+  "listaIDProductos": [
+    117, 113
+  ]
+}
+
+////////////////////////////////////
+//EDICION DE PEDIDOS
+
+//Editar un pedido despues de 5 horas de ser ingresado
+{
+  "fechaModificacion": "2020-10-10T16:00:00",
+  "idFactura": 1,
+  "listaIDProductosAgregar": [
+    111, 112
+  ]
+}
+
+//Editar un pedido con un costo menor al inicial
+{
+  "fechaModificacion": "2020-10-10T10:00:00",
+  "idFactura": 1,
+  "listaIDProductosAgregar": [
+    111
+  ]
+}
+
+//Editar un pedido con un costo mayor o igual que el inicial (costo final menor a 70000)
+
+{
+  "fechaModificacion": "2020-10-10T10:00:00",
+  "idFactura": 1,
+  "listaIDProductosAgregar": [
+    111, 112
+  ]
+}
+
+//Editar un pedido con un costo mayor o igual que el inicial (costo final entre 70000 y 100000)
+
+{
+  "fechaModificacion": "2020-10-10T11:00:00",
+  "idFactura": 1,
+  "listaIDProductosAgregar": [
+    112, 114, 117
+  ]
+}
+
+//Editar un pedido con un costo mayor o igual que el inicial (costo final mayor a 100000)
+
+{
+  "fechaModificacion": "2020-10-10T11:00:00",
+  "idFactura": 1,
+  "listaIDProductosAgregar": [
+    113
+  ]
+}
+
+
+////////////////////////////////////
+//ELIMINACION DE PEDIDOS
+
+//Eliminar un producto antes de 12 horas de ser ingresado
+{
+  "fechaEliminacion": "2020-10-10T16:30:00",
+  "idFactura": 2
+}
+//Intentar eliminar un producto despues de 12 horas de ser ingresado
+{
+  "fechaEliminacion": "2020-10-10T22:30:00",
+  "idFactura": 3
+}
